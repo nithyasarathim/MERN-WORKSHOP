@@ -1,0 +1,84 @@
+HTML, CSS, JS
+REACT
+NODE,EXPRESS
+MONGODB
+
+3 WAYS -> Web, android, Desktop
+
+Website       - low interaction of data
+Web App       - high interaction of data
+
+
+HTML:
+    head
+        ->title
+        ->link
+        ->style
+    body
+        ->header
+        ->main
+        ->footer
+
+    Tags :
+
+        <h1>  - </h6>, 
+        <p>   - structure not considered,
+        <pre> - structure/format considered,
+
+        txt formating tags :
+            <b></b>,<strong></strong> - bold
+            <i></i>,<em></em>         - italic
+            <mark> - highlight
+            <sub>  - sub text
+            <sup>  - super text
+            <br>   - break
+            <hr>   - horizontal line
+            <marquee> - scroll automatic form right to left
+            <u>       - underline
+            <s>       - strike through
+            <progress>- progress bar
+
+        media :
+            <img src="">
+            <a href="" target="_blank">   - (hyper reference) redirect to some other destination
+
+        list :
+
+            <ul> - unordered list (bullet)
+                <li> - list item
+
+            <ol> - ordered list   (number)  (type="i" for roman)
+                <li> - list item
+
+            <dl> - description list
+                <dt> - description term
+                <dd> - description data
+            
+        table :
+            <table>
+                <tr> - table row
+                    <th> - table header
+                    <td> - table data
+        
+
+    CSS:
+        Universal selector  : *{}
+        Element selector    : tag{}
+        Class selector      : .class{}
+        ID selector         : #id{}
+
+        Way of writing CSS:
+            Inline CSS
+            Internal CSS
+            External CSS <link rel="stylesheet" href="style.css">
+
+    div:
+        <div> - division
+        <span> - inline division
+        flex properties:
+            flex-direction  -> row, column, row-reverse, column-reverse
+            justify-content -> flex-start, flex-end, center (row)
+            align-items     -> flex-start, flex-end, center (column)
+            flex-wrap       -> wrap (exceeding elements wrapped by div)
+            gap
+            align-content   -> space-around , space-between 
