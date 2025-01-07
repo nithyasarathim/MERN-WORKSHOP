@@ -1,0 +1,138 @@
+body{
+    /* background: url('/assets/bg.jpg') center fixed; */
+    background-size: cover;
+    font-family: 'bahnschrift'; 
+    animation-name: bg-change;
+    transition: ease;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+}
+
+.logosection{
+    display:flex;
+    justify-content:center; 
+    align-items:center; 
+    flex-direction:column; 
+    padding:30px;
+    border-radius:10px; 
+    width:200px; 
+    height:150px; 
+    position:absolute; 
+    top:40%; 
+    left: 42%;
+    animation-name: moveToTop;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.logosection img{
+    width: 100px;
+    height: 100px;
+    transition: ease-in-out;
+    animation-name:shrink;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+.logosection h2 {
+    font-size: 20px;
+    transition: ease-in-out; 
+    animation-name: shrink-head;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+
+.formarea{
+    width: fit-content;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 200px;
+    border-radius: 20px;
+    margin-left: 50px;
+    animation-name: form-ani;
+    opacity:0;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    
+}
+
+th, td {
+    border: 1px solid #ffffff;
+    background-color: rgba(255, 255, 255, 0.8); 
+    font-weight: normal; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@keyframes form-ani {
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes moveToTop {
+    0% {
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+    100% {
+        top: 05%;
+        left: 50%;
+        flex-direction: row;
+        transform: translate(-50%, 0%) ;
+        height: 60px ;
+        width: 250px;
+        transition: 2s width 2s height;
+    }
+}
+
+@keyframes shrink {
+    0% {
+        width: 150px;
+        height: 150px;
+    }
+    100% {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@keyframes shrink-head {
+    0% {
+        font-size: 30px;
+    }
+    100% {
+        font-size: 20px;
+    }
+}
+
+@keyframes bg-change {
+    0% {
+        background-color: aliceblue;
+        ;
+    }
+    20%{
+        background-color: rgb(255, 255, 255);
+    }
+    40%{
+        background-color: rgb(250, 249, 247);
+    }
+    60%{
+        background-color: rgb(255, 241, 222);
+    }
+    100%{
+        background: url('/assets/formbg.jpg') center fixed;
+        background-size: cover;
+    }
+}

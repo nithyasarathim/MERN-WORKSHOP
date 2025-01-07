@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get your Lamborghini</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <head>
+        <div class="logosection">
+            <img src="../../assets/logo.png" alt="Lamborghini logo" width="150px" height="150px">
+            <h2 style="font-family: bahnschrift; margin: 10px 0 0; text-align: center; font-size:25px; padding-left: 20px;padding-right: 20px; ">LAMBORGHINI</h2>
+        </div>  
+    </head>
+    <main>
+        <div class="formarea">
+            <form>
+                <fieldset>
+                    <legend style="text-align: center; font-size: large;"><b>Get your custom Lamborghini</b></legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="color">Color</label>
+                            </td>
+                            <td>
+                                <input type="color" name="color" id="color" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="decal">Decals</label>
+                            </td>
+                            <td>
+                                <input type="file" name="decal" id="decal" required>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="wheel">Rim Texture</label>
+                            </td>
+                            <td>
+                                <input type="radio" name="wheel" id="wheel" value="Polished" required>
+                                <label for="wheel">Polished</label><br>
+                                <input type="radio" name="wheel" id="wheel" value="Matte" required>
+                                <label for="wheel">Matte</label><br>
+                                <input type="radio" name="wheel" id="wheel" value="Gloss" required>
+                                <label for="wheel">Gloss</label>                      
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>                            
+                                <label for="Tech">Technology requirements</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" name="Tech" id="Tech" value="Music" required>
+                                <label for="Tech">Music System</label><br>
+                                <input type="checkbox" name="Tech" id="Tech" value="Navigation" required>
+                                <label for="Tech">Navigation System</label><br>
+                                <input type="checkbox" name="Tech" id="Tech" value="AmbientLight" required>
+                                <label for="Tech">Ambient Light</label><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="model">Horsepower</label>
+                            </td>
+                            <td>
+                                <input type="range" name="model" id="model" min="260" max="769" step="50" required>
+                                <div class="value-label">
+                                <span style="font-weight: normal;padding-right: 30px; font-size:x-small;">260 HP</span>
+                                <span style="font-weight: normal;padding-left: 30px; font-size:x-small;">769 HP</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <center>
+                        <input type="button" value="Submit" style="background: linear-gradient(to right, #b38c18, #ffd900); border: none; color: white; padding: 10px 22px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 5px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                    </center>
+                    
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <footer>
+
+    </footer>    
+</body>
+</html>
