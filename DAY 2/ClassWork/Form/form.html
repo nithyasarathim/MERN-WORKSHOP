@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="form.css">
+    <script>
+        const submitBtn=document.getElementById('submitBtn');
+        submitBtn.onclick()=function(){
+            alert("Form Submitted Successfully");
+        }
+    </script>
+</head>
+<body>
+    <form 
+        action="https://formspree.io/f/meoopnkz"
+        method="POST"
+    >
+        <fieldset>
+            <legend>REGISTRATION FORM</legend>
+        <table>
+            <tr>
+                <td><label>Name</label></td>
+                <td><input type="text" name="name" placeholder="Name here"></td>
+            </tr>
+            <tr>
+                <td><label>Email</label></td>
+                <td><input type="email" name="email" placeholder="Email here"></td>
+            </tr>
+            <tr>
+                <td><label>Password</label></td>
+                <td><input type="password" name="password" placeholder="password here"></td>
+            </tr>
+            <tr>
+                <td><label>Age</label></td>
+                <td><input type="number" name="age" placeholder="Age here"></td>
+            </tr>   
+            <tr>
+                <td><label>Contact Number</label></td>
+                <td><input type="tel" name="contact" placeholder="Mobile number here"></td>
+            </tr>
+            <tr>
+                <td><label>Date of Birth</label></td>
+                <td><input type="date" name="DOB" placeholder="DOB here"></td>
+            </tr>
+            <tr>
+                <td><label>Passed Out</label></td>
+                <td><input type="year" name="PassedOut" placeholder="Passed out year here"></td>
+            </tr>
+            <tr>
+                <td><label>Profile</label></td>
+                <td><input type="image" name="Profile" placeholder="Profile picture here"></td>
+            </tr>
+            <tr>
+                <td><label>Languages known</label></td>
+                <td><input type="checkbox" name="langknown" value="Python">Python <br>
+                <input type="checkbox" name="langknown" value="Java">Java <br>
+                <input type="checkbox" name="langknown" value="C">C <br>
+                <input type="checkbox" name="langknown" value="C++">C++ <br></td>
+            </tr>
+            <tr>
+                <td><label>Gender</label></td>
+                <td><input type="radio" name="gender" value="male">Male <br>
+                    <input type="radio" name="gender" value="female">Female <br>
+                    <input type="radio" name="gender" value="other">Others <br>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Color</label></td>
+                <td><input type="color" name="color" placeholder="Enter color"></td>
+            </tr>
+            <tr>
+                <td><label>Linkedin URL</label></td>
+                <td><input type="url" name="linkedinId" placeholder="LinkedIn url"></td>
+            </tr>
+            <tr>
+                <td><label>Resume</label></td>
+                <td><input type="file" name="file" placeholder="Resume here"></td>
+            </tr>
+            <tr>
+                <td><label>About You</label></td>
+                <td><input type="textarea" name="abouthim" placeholder="Tell about you here"></td>
+            </tr>
+            <tr>
+                <td><label id="submitBtn">Submit</label></td>
+                <td><input type="submit" value="Submit"></td>
+            </tr>
+
+        </table>
+    </form>
+        </fieldset>
+    </form>
+</body>
+</html>

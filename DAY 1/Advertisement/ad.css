@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: url('bg.jpg') center fixed;
+    background: url('../../assets/bg.jpg') center fixed;
     opacity: 1;
     background-size: cover;
     font-family: "bahnschrift"; 
