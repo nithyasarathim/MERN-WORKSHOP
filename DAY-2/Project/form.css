@@ -129,7 +129,7 @@ th, td {
         background-color: rgb(0, 0, 0);
     }
     60%{
-        background-color: rgb(255, 241, 222);
+        background-color: rgb(0, 0, 0);
     }
     100%{
         background: url('/assets/formbg2.jpg') center fixed;
