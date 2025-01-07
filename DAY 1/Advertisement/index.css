@@ -1,0 +1,24 @@
+body, html {
+    margin: 0;
+    height: 100%; 
+}
+.background {
+    background-image: url('/assets/formbg.gif');
+    background-size: cover;
+    background-position: center;
+    width: 100%; 
+    height: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+#logosection {
+    display: flex;
+    align-items: center; 
+    color: white; 
+}
+h3 {
+    font-family: 'bahnschrift';
+    font-weight: bold;
+    margin-left: 20px;
+}
