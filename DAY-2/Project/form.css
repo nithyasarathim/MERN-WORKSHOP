@@ -134,7 +134,5 @@ th, td {
         background: url('../../assets/formbg1.png') no-repeat;
         background-size: cover;
         background-position: center;
-        border-radius: 2px;
-        border: 2px solid black;
     }
 }
