@@ -40,6 +40,8 @@ main img{
     width: 430px;
     height: 430px;
     border-radius: 50%;
+    border-width: 2px;
+    border-color: rgb(0, 0, 0);
 }
 
 #homearea{

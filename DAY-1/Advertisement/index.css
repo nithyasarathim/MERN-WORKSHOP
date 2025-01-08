@@ -1,10 +1,11 @@
 body, html {
     margin: 0;
     height: 100%; 
+    background-color: white;
 }
 
 .background {
-    background: url('/assets/adbg.gif') center fixed;
+    background-color: black;
     background-size: cover;
     background-position: center;
     width: 100%; 
@@ -25,37 +26,43 @@ body, html {
     width:200px; 
     height:150px; 
     position:absolute; 
-    top:40%; 
+    top:30%; 
     left: 42%;
     animation-name: moveToTop;
     animation-duration: 2s;
     animation-fill-mode: forwards;
+    animation-delay: 2s;
 }
 
 .logosection img{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     transition: ease-in-out;
     animation-name:shrink;
     animation-duration: 4s;
     animation-fill-mode: forwards;
+    animation-delay: 2s;
 }
 
 .logosection h2 {
-    font-size: 20px;
+    font-size: 75px;
     transition: ease-in-out; 
     animation-name: shrink-head;
     animation-duration: 4s;
     animation-fill-mode: forwards;
+    animation-delay: 2s;
 }
 
 
 @keyframes moveToTop {
     0% {
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         
+    }
+    20% {
+        
+    }
+    30%{
+        flex-direction: row;
     }
     100% {
         top: 0%;
@@ -81,7 +88,7 @@ body, html {
 
 @keyframes shrink-head {
     0% {
-        font-size: 75px;
+        font-size: 35px;
     }
     100% {
         font-size: 25px;
@@ -102,7 +109,7 @@ body, html {
         background-color: rgb(0, 0, 0);
     }
     100%{
-        background: url('/assets/adbg.gif') center fixed;
+        background-image: url('/assets/adbg.gif') center fixed;
         background-size: cover;
     }
 }
