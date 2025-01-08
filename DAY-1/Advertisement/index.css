@@ -17,7 +17,7 @@ body, html {
 }
 
 .logosection{
-    display:flex;
+    display:inline-flex;
     justify-content:center; 
     align-items:center; 
     flex-direction:column; 
@@ -111,5 +111,62 @@ body, html {
     100%{
         background-image: url('/assets/adbg.gif') center fixed;
         background-size: cover;
+    }
+}
+.car{
+    background: url('/assets/bgad1.png');
+    background-size: cover;
+    background-position: center;
+    width: 60%;
+    height: 60%; 
+}
+
+.car:hover{
+    animation-name: light;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+@keyframes light {
+    0% {
+        background: url('/assets/bgad1.png');
+        background-size: cover;
+        background-position: center;
+        width: 60%;
+        height: 60%; 
+    }
+    20% {
+        background: url('/assets/bgad2.png');
+        background-size: cover;
+        background-position: center;
+        width: 60%;
+        height: 60%; 
+    }
+    40%{
+        background: url('/assets/bgad1.png');
+        background-size: cover;
+        background-position: center;
+        width: 60%;
+        height: 60%; 
+    }
+    60%{
+        background: url('/assets/bgad3.png');
+        background-size: cover;
+        background-position: center;
+        width: 60%;
+        height: 60%; 
+    }
+    80%{
+        background: url('/assets/bgad1.png');
+        background-size: cover;
+        background-position: center;
+        width: 60%;
+        height: 60%; 
+    }
+    100% {
+        background: url('/assets/bgad3.png');
+        background-size: cover;
+        background-position: center;
+        width: 60%;
+        height: 60%; 
     }
 }
