@@ -74,6 +74,9 @@ HTML:
         <output>
         <option>   ()
         <optgroup>
+        <map>
+        <area>
+        
         
 
     CSS:
