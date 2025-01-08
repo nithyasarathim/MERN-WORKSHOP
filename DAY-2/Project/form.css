@@ -133,7 +133,7 @@ th, td {
     100% {
         background: url('../../assets/formbg1.png') no-repeat;
         background-size: cover;
-        background-position: top;
+        background-position: center;
         border-radius: 2px;
         border: 2px solid black;
     }
