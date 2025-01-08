@@ -109,16 +109,17 @@ body, html {
         background-color: rgb(0, 0, 0);
     }
     100%{
-        background-image: url('/assets/adbg.gif') center fixed;
+        background-image: url('../../assets/adbg.gif') center fixed;
         background-size: cover;
     }
 }
 .car{
-    background: url('/assets/bgad1.png');
+    background: url('../../assets/bgad1.png');
     background-size: cover;
     background-position: center;
     width: 60%;
-    height: 60%; 
+    height: 60%;
+    
 }
 
 .car:hover{
@@ -126,44 +127,60 @@ body, html {
     animation-fill-mode: forwards;
     animation-duration: 1s;
 }
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0.4;
+    }
+    90%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 @keyframes light {
     0% {
-        background: url('/assets/bgad1.png');
+        background: url('../../assets/bgad1.png');
         background-size: cover;
         background-position: center;
         width: 60%;
         height: 60%; 
     }
     20% {
-        background: url('/assets/bgad2.png');
+        background: url('../../assets/bgad2.png');
         background-size: cover;
         background-position: center;
         width: 60%;
         height: 60%; 
     }
     40%{
-        background: url('/assets/bgad1.png');
+        background: url('../../assets/bgad1.png');
         background-size: cover;
         background-position: center;
         width: 60%;
         height: 60%; 
     }
     60%{
-        background: url('/assets/bgad3.png');
+        background: url('../../assets/bgad3.png');
         background-size: cover;
         background-position: center;
         width: 60%;
         height: 60%; 
     }
     80%{
-        background: url('/assets/bgad1.png');
+        background: url('../../assets/bgad1.png');
         background-size: cover;
         background-position: center;
         width: 60%;
         height: 60%; 
     }
     100% {
-        background: url('/assets/bgad3.png');
+        background: url('../../assets/bgad3.png');
         background-size: cover;
         background-position: center;
         width: 60%;
