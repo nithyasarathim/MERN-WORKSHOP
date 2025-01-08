@@ -1,0 +1,250 @@
+#blue { 
+    height: 200px;
+    width: 200px;
+    background-color: rgb(0, 170, 255);
+    border-radius: 50%;
+    margin-top: 250px;
+    margin-left: 650px;
+    position: absolute;
+    border: 1px solid black;
+}
+
+#white {
+    margin-top: 51px;
+    height: 149px;
+    width: 170px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: relative;
+}
+
+#eyes {
+    position: absolute;
+    top: -20px;
+    left: 32px;
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+}
+
+#eye1, #eye2 {
+    height: 70px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+    animation: eyeAnimation 4s both;
+    animation-delay: 3s;
+}
+
+.iris {
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 19px;
+    left: 12px;
+    animation: irisAnimation 4s both;
+    animation-delay: 3s;
+}
+
+.reflection {
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    animation: reflectionAnimation 4s both;
+    animation-delay: 3s;
+}
+
+#nose {
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 39px;
+    left: 72px;
+    border: 1px solid black;
+}
+
+.nose-reflection {
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+/* Smile using curved borders */
+#smile {
+    height:30px;
+    width: 80px;
+    border: solid 1px black;
+    border-radius: 50%;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    top: 100px; 
+    left: 44px;
+    animation:smileanime 4s both;
+    animation-delay: 3s;
+}
+
+/* Whiskers */
+.whisker-left1, .whisker-right1, .whisker-left2, .whisker-left3, .whisker-right3, .whisker-right2 {
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: black;
+}
+
+.whisker-left1 {
+    top: 60px;
+    left: 15px;
+    transform: rotate(20deg);
+}
+
+.whisker-left2 {
+    top: 79px;
+    left: 15px;
+    transform: rotate(0deg);
+}
+
+.whisker-left3 {
+    top: 100px;
+    left: 15px;
+    transform: rotate(-20deg);
+}
+
+.whisker-right1 {
+    top: 60px;
+    right: 20px;
+    transform: rotate(-20deg);
+}
+
+.whisker-right2 {
+    top: 79px;
+    right: 20px;
+    transform: rotate(0deg);
+}
+
+.whisker-right3 {
+    top: 100px;
+    right: 20px;
+    transform: rotate(20deg);
+}
+
+#whisker-line {
+    position: absolute;
+    width: 1px;
+    height: 72px;
+    background-color: black;
+    top: 58px;
+    left: 83px;
+}
+
+
+@keyframes eyeAnimation {
+    0% {
+        height: 70px;
+        width: 50px;
+        border-radius: 50%;
+    }
+    100% {
+        
+        height: 50px; 
+        width: 50px;   
+        border-radius: 50%;
+    }
+}
+
+@keyframes irisAnimation {
+    0% {
+        height: 25px;
+        width: 25px;
+        background-color: black;
+        border-radius: 50%;
+    }
+    60% {
+        height: 22px;  
+        width: 28px;   
+        background-color: white;
+        border: 1px solid black;
+    }
+    100% {
+        height: 22px;   
+        width: 30px;     
+        background-color: white;
+        border: 1px solid black;
+    }
+} 
+
+@keyframes reflectionAnimation {
+    0% {
+        height: 10px;
+        width: 10px;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        top: 6px;
+        left: 6px;
+    }
+    100% {
+        height: 5px;
+        width: 5px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        top: 7px;
+        left: 20px;
+    }
+}
+
+@keyframes smileanime {
+    0% {
+        height: 30px;
+        width: 80px;
+        border: solid 1px black;
+        border-radius: 50%;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        position: absolute;
+        top: 100px; 
+        left: 44px;
+    }
+    50% {
+        height: 35px;
+        width: 80px;
+        border: solid 1px black;
+        border-radius: 50%;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        position: absolute;
+        top: 100px; 
+        left: 44px;
+    }
+    100% {
+         height: 30px;
+         width: 80px;
+         border: solid 1px black;
+         border-radius: 50%;
+         border-top-color: transparent;
+        border-left-color: transparent;
+         position: absolute;
+         top: 100px; 
+         left: 44px;
+    }
+} 
