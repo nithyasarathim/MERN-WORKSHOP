@@ -1,0 +1,53 @@
+body {
+    background: radial-gradient(#3f3f3f,#2f2f2f,#2d2d2d,#1f1f1f, #1a1a1a, #000000);
+    color: white;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Bahnschrift', sans-serif;
+}
+
+h1 {
+    margin-bottom: 20px;
+    background: radial-gradient(#d4af37, #b8860b, #8b6914);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+#output {
+    font-family: 'Bahnschrift', sans-serif;
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+    background: radial-gradient(#d4af37, #b8860b, #8b6914);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

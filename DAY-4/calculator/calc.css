@@ -37,7 +37,10 @@ table {
     display: flexbox;
     margin-top: 200px;
     margin-left: 560px;
-    border-radius: 20px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
 }
 
 .msg {
