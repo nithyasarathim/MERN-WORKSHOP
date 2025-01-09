@@ -163,3 +163,20 @@ HTML:
         getElementByID -> id
         getElementByClassname -> class
         querySelector -> queries
+
+        .innerHTML
+        .style       -> for styling
+
+
+        Variable declaration: 
+            var    - global
+            let    - local
+            const  - constant
+
+
+msg box => {
+    UI msg -> HTML;
+    input box ;
+    submit button;
+    input type & submit and division which is content and it should be replicated below;
+}
