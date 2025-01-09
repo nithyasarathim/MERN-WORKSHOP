@@ -151,3 +151,15 @@ HTML:
             all css properties (expecially flexbox, transform, transition, animation, form, gradient, text shadow, box shadow, media tags, iframe, youtube&map embedded link)
             hyoerlinks
             
+
+    JAVASCRIPT:
+
+        output statements :
+                window.alert;
+                Document.innerHTML;
+                Document.write;
+                console.log;
+
+        getElementByID -> id
+        getElementByClassname -> class
+        querySelector -> queries
