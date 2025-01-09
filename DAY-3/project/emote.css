@@ -38,6 +38,7 @@
     overflow: hidden;
     animation: eyeAnimation 4s both;
     animation-delay: 3s;
+    
 }
 
 .iris {
@@ -50,6 +51,8 @@
     left: 12px;
     animation: irisAnimation 4s both;
     animation-delay: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
 }
 
 .reflection {
@@ -62,6 +65,8 @@
     left: 6px;
     animation: reflectionAnimation 4s both;
     animation-delay: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
 }
 
 #nose {
@@ -99,6 +104,8 @@
     left: 44px;
     animation:smileanime 4s both;
     animation-delay: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
 }
 
 /* Whiskers */

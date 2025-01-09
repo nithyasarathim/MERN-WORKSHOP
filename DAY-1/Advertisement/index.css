@@ -247,3 +247,18 @@ span:hover{
         background: radial-gradient(#d4af37, #b8860b, #8b6914); background-clip: text; -webkit-text-fill-color: transparent; 
     }
 }
+
+.lg{
+    animation-name: flip;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+@keyframes flip {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
