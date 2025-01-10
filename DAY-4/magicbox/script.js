@@ -1,68 +1,68 @@
 const levels = [20, 15, 10, 5, 3];
-const randomNumbers = Array.from({ length: 5 }, () => Math.floor(Math.random() * 100) + 1);
-console.log('Random Numbers:', randomNumbers);
+const randomNums = Array.from({ length: 5 }, () => Math.floor(Math.random() * 100) + 1);
+console.log('Random Numbers:', randomNums);
 
-let currentLevel = 0;
-let attemptsLeft = levels[currentLevel];
+let currLevel = 0;
+let attemptsLeft = levels[currLevel];
 const levelDisplay = document.getElementById('levelDisplay');
-const messageEl = document.getElementById('message');
+const msgEl = document.getElementById('message');
 const guessInput = document.getElementById('guessInput');
-const submitButton = document.getElementById('submitGuess');
+const submitBtn = document.getElementById('submitGuess');
 
-const updateLevel = () => {
+const updateLvl = () => {
     document.querySelectorAll('.box').forEach((box, index) => {
-        if (index === currentLevel) {
+        if (index === currLevel) {
             box.classList.add('active');
         } else {
             box.classList.remove('active');
         }
     });
-    levelDisplay.textContent = `Level ${currentLevel + 1}`;
+    levelDisplay.textContent = `Level ${currLevel + 1}`;
 };
 
-const openBoxTemporarily = () => {
-    const currentBox = document.getElementById(`box${currentLevel + 1}`);
-    currentBox.classList.remove('closed');
-    currentBox.classList.add('opened');
+const openBoxTemp = () => {
+    const currBox = document.getElementById(`box${currLevel + 1}`);
+    currBox.classList.remove('closed');
+    currBox.classList.add('opened');
 
     setTimeout(() => {
-        currentBox.classList.remove('opened');
-        currentBox.classList.add('closed');
-        currentLevel++;
-        if (currentLevel === levels.length) {
-            messageEl.textContent = 'You have successfully opened all the boxes. You win!';
+        currBox.classList.remove('opened');
+        currBox.classList.add('closed');
+        currLevel++;
+        if (currLevel === levels.length) {
+            msgEl.textContent = 'You have successfully opened all the boxes. You win!';
             guessInput.disabled = true;
-            submitButton.disabled = true;
+            submitBtn.disabled = true;
         } else {
-            attemptsLeft = levels[currentLevel];
-            updateLevel();
-            messageEl.textContent = `Move to Level ${currentLevel + 1}. You have ${attemptsLeft} chances.`;
+            attemptsLeft = levels[currLevel];
+            updateLvl();
+            msgEl.textContent = `Move to Level ${currLevel + 1}. You have ${attemptsLeft} chances.`;
         }
     }, 3000);
 };
 
-updateLevel();
+updateLvl();
 
-submitButton.addEventListener('click', () => {
+submitBtn.addEventListener('click', () => {
     const userGuess = parseInt(guessInput.value);
 
     if (isNaN(userGuess)) {
-        messageEl.textContent = 'Please enter a valid number.';
+        msgEl.textContent = 'Please enter a valid number.';
         return;
     }
 
-    if (userGuess === randomNumbers[currentLevel]) {
-        messageEl.textContent = `Congratulations! You guessed the number for Level ${currentLevel + 1}. Opening the box...`;
-        openBoxTemporarily();
+    if (userGuess === randomNums[currLevel]) {
+        msgEl.textContent = `Congratulations! You guessed the number for Level ${currLevel + 1}. Opening the box...`;
+        openBoxTemp();
     } else {
         attemptsLeft--;
         if (attemptsLeft === 0) {
-            messageEl.textContent = `You failed to open the box at Level ${currentLevel + 1}. Game over! The correct number was ${randomNumbers[currentLevel]}.`;
+            msgEl.textContent = `You failed to open the box at Level ${currLevel + 1}. Game over! The correct number was ${randomNums[currLevel]}.`;
             guessInput.disabled = true;
-            submitButton.disabled = true;
+            submitBtn.disabled = true;
         } else {
-            const hint = userGuess < randomNumbers[currentLevel] ? 'too low' : 'too high';
-            messageEl.textContent = `Incorrect! Your guess is ${hint}. You have ${attemptsLeft} chances left for Level ${currentLevel + 1}.`;
+            const hint = userGuess < randomNums[currLevel] ? 'too low' : 'too high';
+            msgEl.textContent = `Incorrect! Your guess is ${hint}. You have ${attemptsLeft} chances left for Level ${currLevel + 1}.`;
         }
     }
 
