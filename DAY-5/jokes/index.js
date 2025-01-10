@@ -37,7 +37,7 @@ showDogsBtn.onclick = () => {
     axios.get('https://dog.ceo/api/breeds/image/random')
         .then(function(res) {
             showDogsBtn.textContent = "Show Another Dog";
-            dogQuote.innerHTML = "Here's a cute dog for you!";
+            dogQuote.innerHTML = "Here are some of my neighbourhood dogs";
             dogImage.src = res.data.message;
             dogImage.style.display = "block";
         })

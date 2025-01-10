@@ -196,3 +196,8 @@ API fetching steps :
     => import axios package
     => use url to fetch data
     => display
+
+callback function -> function calling another function
+
+async function => A -> so one time all operations
+sync function  => One after the another
