@@ -180,3 +180,19 @@ msg box => {
     submit button;
     input type & submit and division which is content and it should be replicated below;
 }
+
+=> Necessary contents to learn today => timing functions (setInterval, clearInterval)
+                                     -> API (axios, fetch)
+                                     -> async & await function
+                                            -> callback
+                                            -> promises
+                                                ->then
+                                                ->catch
+                                    -> graphics & canva 
+                                    -> chart.js
+                                    -> plotty package
+
+API fetching steps :
+    => import axios package
+    => use url to fetch data
+    => display
