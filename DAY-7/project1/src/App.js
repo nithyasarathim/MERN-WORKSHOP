@@ -1,16 +1,9 @@
 import React from 'react'
-import { useState } from 'react'
-
-
+import Todo from './component/Todo';
 const App = () => {
-  
-  const [count,setcount]=useState(0);
-  const handleclick=()=>setcount(count+1);
   return (
-    <div>
-      <button onClick={handleclick}>{count}</button>
-    </div>
-  )
+    <Todo></Todo> 
+  );
 }
 
-export default App
+export default App;
