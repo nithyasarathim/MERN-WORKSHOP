@@ -1,22 +1,16 @@
-import React from 'react';
-import Table from './component/table';
-import Intro from './component/intro';
-import './App.css'; 
+import React from 'react'
+import { useState } from 'react'
+
 
 const App = () => {
-  const employees = [
-    { id: 101, name: 'John', salary: 50000 },
-    { id: 102, name: 'Smith', salary: 60000 },
-    { id: 103, name: 'Starc', salary: 70000 }
-  ];
-
+  
+  const [count,setcount]=useState(0);
+  const handleclick=()=>setcount(count+1);
   return (
-    <div className='para' style={{ fontSize: "30px" }}>
-      <h1>Employee Details</h1>
-      <Table employees={employees} />
-      <Intro />
+    <div>
+      <button onClick={handleclick}>{count}</button>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
