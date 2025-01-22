@@ -1,0 +1,52 @@
+
+.tabul {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    background-color: #000000;
+    color: white;
+  }
+  
+  .taskhead, .tasks {
+    width: 60%;
+    padding: 12px;
+    font-size: 16px;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .trow {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .actionhead, .actions {
+    width: 20%;
+    padding: 12px;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: left;
+  }
+  
+  .remove-btn {
+    padding: 6px 12px;
+    font-size: 14px;
+    color: white;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 4px;
+  }
+  

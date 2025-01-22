@@ -1,0 +1,45 @@
+body {
+    background-color: white;
+    font-family: 'Bahnschrift', sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2, h3 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  div {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  input, select, button {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #444;
+  }
+  
