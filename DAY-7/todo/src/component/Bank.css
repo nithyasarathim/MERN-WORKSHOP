@@ -42,4 +42,15 @@ body {
   button:hover {
     background-color: #444;
   }
-  
+
+  .td1 {
+    padding: 10px;
+    width: 150px;
+    border: 1px solid #ccc;
+  }
+
+  .td2 {
+    padding: 10px;
+    width: 90px;
+    border: 1px solid #ccc;
+  }

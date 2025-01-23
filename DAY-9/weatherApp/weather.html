@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather | Nithyasarathi M</title>
+  <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+  <div class="weather-container">
+    <h1>- WEATHER -</h1>
+    <input type="text" id="cityInp" placeholder="Enter city name and press Enter..." />
+    <div class="weather-details">
+      <h2 id="cName">-</h2>
+      <table>
+        <tr>
+          <td>Temperature:</td>
+          <td id="temp">-</td>
+        </tr>
+        <tr>
+          <td>Feels Like:</td>
+          <td id="feel">-</td>
+        </tr>
+        <tr>
+          <td>Description:</td>
+          <td id="desc">-</td>
+        </tr>
+        <tr>
+          <td>Wind Speed:</td>
+          <td id="wind">-</td>
+        </tr>
+      </table>
+      <img id="icon" src="assets/haze.png" alt="Weather Icon" />
+      <p id="sugg">Enter a city name to get the weather details!</p>
+    </div>
+  </div>
+  <script src="weather.js"></script>
+</body>
+</html>

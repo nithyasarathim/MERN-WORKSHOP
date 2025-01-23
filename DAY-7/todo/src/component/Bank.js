@@ -16,10 +16,22 @@ const Bank = () => {
       alert("Account name already exists");
     } else {
       setAccounts([...accounts, { name: newAccName, balance: 0 }]);
+      alert("Account created successfully for "+ newAccName);
       setNewAccName('');
-      alert("Account created successfully");
     }
   };
+
+  const deleteAccount = () => {
+    if (!currAccount) {
+      alert("Please select an account to delete");
+    } else {
+      const updatedAccounts = accounts.filter(acc => acc.name !== currAccount);
+      setAccounts(updatedAccounts);
+      alert(`${currAccount} has been deleted`);
+      setCurrAccount(''); 
+    }
+  };
+  
 
   const Transactions = () => {
     if (!currAccount) {
@@ -50,7 +62,7 @@ const Bank = () => {
 
   return (
     <div>
-      <h2>Bank Application</h2>
+      <h2>BANK APPLICATION</h2>
       <div>
         <h3>Create Account</h3>
         <input 
@@ -59,7 +71,9 @@ const Bank = () => {
           value={newAccName} 
           onChange={(e) => setNewAccName(e.target.value)} 
         />
-        <button onClick={createAccount}>Create Account</button>
+        <button onClick={createAccount}>CREATE ACCOUNT</button>
+        <button onClick={deleteAccount}>DELETE ACCOUNT</button>
+
       </div>
       <div>
         <h3>Select Account</h3>
@@ -89,7 +103,11 @@ const Bank = () => {
         <h3>Account Balances</h3>
         {accounts.map(acc => (
           <p key={acc.name}>
-            {acc.name}: {acc.balance}
+            <tr>
+              <td className='td1'>{acc.name}</td> <p style={{marginLeft:'5px',marginRight:'5px'}}>:</p>
+              <td className='td2'>{acc.balance}</td>
+            </tr>
+            
           </p>
         ))}
       </div>

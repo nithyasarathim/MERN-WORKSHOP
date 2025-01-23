@@ -233,4 +233,17 @@ REACT :
             step 1 : open folder in VSCODE
             step 2 : open terminal "npx create-react-app project-name"
             step 3 : npm start
+
+        
+    // useEffect :
+
+       *  It is a react hook used for handling side effects in functional components.
+       *  It accepts two arguments the first is a function contsin our logic the second is a dependency 
+        array that determines when to run the effect.
+
+    // Syntax :
+
+        useEffect( effectFunction, dependency array){
+            what to do ? When to do ?
+        }
             
